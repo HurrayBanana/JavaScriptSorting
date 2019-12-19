@@ -9,7 +9,7 @@ function init()
     screen = document.getElementById("main");
     stats = document.getElementById("stats");
 
-    for (let index = 0; index < 1200; index++) {
+    for (let index = 0; index < 1500; index++) {
 
         var bar = new item(Math.round(Math.random()*500), index, screen);
         elements.push(bar);
@@ -36,5 +36,11 @@ function performInsert()
 function performBubble()
 {
     var data = bubble(elements);
+    stats.innerText = data.Info;
+}
+
+function performQuick()
+{
+    var data = quickSort(elements);
     stats.innerText = data.Info;
 }
