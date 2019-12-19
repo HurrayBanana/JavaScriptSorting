@@ -9,11 +9,14 @@ function init()
     screen = document.getElementById("main");
     stats = document.getElementById("stats");
 
-    for (let index = 0; index < 1000; index++) {
+    for (let index = 0; index < 1200; index++) {
 
-        var div = new item(Math.round(Math.random()*500), index, this.screen);
-        elements.push(div);
+        var bar = new item(Math.round(Math.random()*500), index, screen);
+        elements.push(bar);
     }
+    screen.style.width = (elements.length + 10) + "px";
+    stats.style.width = (elements.length + 10) + "px";
+
 }
 //creates a random set of data
 function resetRandom()
