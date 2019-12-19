@@ -1,0 +1,23 @@
+.bar{
+    height: 200px;
+    width: 1px;
+    background-color: blueviolet;
+    position:absolute;
+}
+
+#main{
+    position: relative;
+    padding: 10px;
+    width:1000px;
+    height:510px;
+    background-color:#777;
+    border:1px solid black;
+}
+
+#stats{
+    background-color: blue;
+    width:1000px;
+    padding: 10px;
+    border:1px solid black;
+
+}
