@@ -29,7 +29,9 @@ class Data
         var time
         return this.algorithm + " [n=" + this.n + " ] "
         + " Total Cost [ " + (this.compares + this.moves + this.swaps) + " ] "
-        + " Movement [ " + (this.moves + this.swaps) + " ] "
+        + " Total Movement [ " + (this.moves + this.swaps) + " ] "
+        + " Moves [ " + this.moves + " ] "
+        + " swaps [ " + this.swaps + " ] "
         + " Compares [ " + this.compares + " ]"
         + " Time [ " + (Date.now() - this.start) + "ms ]";
     
