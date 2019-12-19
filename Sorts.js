@@ -3,7 +3,7 @@ function insert(List)
 {	
 	var insertposition, item, key;
 
-    var metrics = new Data("Insert");
+    var metrics = new Data("Insert", List.length);
 
 	for (item = 1; item < List.length; item++) {
 		key = List[item] ;
@@ -36,7 +36,7 @@ function bubble(List)
 {	
 	var swapped, item, exam ;
 	
-    var metrics = new Data("Bubble");
+    var metrics = new Data("Bubble", List.length);
 
 	exam = List.length ;
 	swapped = true ;

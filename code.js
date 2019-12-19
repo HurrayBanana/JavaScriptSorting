@@ -16,7 +16,7 @@ function init()
     }
 }
 //creates a random set of data
-function reset()
+function resetRandom()
 {
 	for (let item = 0; item < elements.length; item++) {
         elements[item].setSize(Math.round(Math.random()*500));

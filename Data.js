@@ -1,12 +1,12 @@
 class Data
 {
-    constructor(algorithm)
+    constructor(algorithm, quantity)
     {
         this.algorithm = algorithm;
         this.compares = 0;
         this.moves = 0;
         this.swaps = 0;
-        
+        this.n = quantity;
     }
 
     swapped()
@@ -24,8 +24,8 @@ class Data
         this.compares++;
     }
 
-    get Info() { return this.algorithm 
-        + " Total Cost[" + (this.compares + this.moves + this.swaps) 
-        + "] Movement[" + (this.moves + this.swaps)
-        + "] Compares[" + this.compares + "]";}
+    get Info() { return this.algorithm + " [n=" + this.n + " ] "
+        + " Total Cost [ " + (this.compares + this.moves + this.swaps) + " ] "
+        + " Movement [ " + (this.moves + this.swaps) + " ] "
+        + " Compares [ " + this.compares + " ]";}
 }
